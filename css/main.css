@@ -15,10 +15,10 @@ address, em, i {font-style: normal;}
 /*layout*/
 body {font-family: 'NanumSquare', sans-serif !important; font-size: 14px; color:#4e4e4e; line-height: 1.4;}
 .wrap {width: 100%; min-width: 1100px; overflow: hidden;}
-/* .row { max-width:1140px; margin:0 auto; padding:0 10px; position: relative;} */
+
 
 /*header*/
-/*-----------아래 추가-------------*/
+
 /* 로고와 네비게이션 */
 #header > .row { position:relative;  z-index:9; }
 #header h1 {
@@ -37,7 +37,7 @@ body {font-family: 'NanumSquare', sans-serif !important; font-size: 14px; color:
 }
 #header .row.on {background: rgb(255, 255, 255);}
 #header .open { display: none;}
-#header .close { display:none;}
+#header .close { display:none; transition: all 1.1s;}
 
 #header #nav {
     position: absolute;
@@ -62,9 +62,7 @@ body {font-family: 'NanumSquare', sans-serif !important; font-size: 14px; color:
     display: none;
     border-radius: 5px;
 }
-/* #header #nav .depth1 > li.on .depth2 {
-    display:block;
-} */
+
 #header .depth2 a {
     padding:18px 0; display:block; 
     border-bottom:1px solid rgb(233, 233, 233);
@@ -202,7 +200,6 @@ section.global ul li a p{font-size: 17px;}
 
 /*footer*/
 footer {padding: 80px 0 0; text-align: center;}
-footer .sns li {display: inline-block; margin-right: 30px;}
 footer .footerLogo {font-size: 40px;; font-weight: 900; letter-spacing: -6px; color: #39312b; margin: 40px 0 20px;}
 footer ul li{font-size: 17px; line-height: 1.4;}
 footer ul li .copyright {font-size: 15px; font-weight: 100; color:#888; display: block; margin-top:20px; }

@@ -51,38 +51,39 @@ function fixHeader(){
 
 $('header .open').on('click', function(){
     $('body').css({'overflow' : 'hidden'});
-    $('header .bg').css({'display' : 'block'});
-    
-    $('header nav').addClass('on');
+    $('.bg').css({'display' : 'block'});
+    $('#nav, #header').addClass('on');
 })
 
-$('#header .close, header .bg').on('click', function(){
+$('.close, .bg').on('click', function(){
     $('body').css({'overflow':'auto'});
-    $('header .bg').css({'display' : 'none'});
-    $('header nav').removeClass('on');
+    $('.bg').css({'display' : 'none'});
+    $('#nav, #header').removeClass('on');
 })
-$('#header .open').on('click', function(){
-    $(this).parents('#header').addClass('on')
-})
-
-$('#header .close').on('click', function(){
-    $(this).parents('#header').removeClass('on')
-})
-
 //nav바 오픈 언오픈
+//1100px 메뉴버튼 클릭시 bg nav바 나타나고 x나 bg클릭시 사라짐
 //-----------------------------------------------------
 
+
+
+
+
 //------------------------depth2 아래  슬라이드--------------------
-$('#header #nav .depth1 > li').on('mouseover', function(){
-    if ( $('html').hasClass('pc') ) {
+$('#header #nav .depth1 > li').on('click', function(){
+    
         $(this).find('.depth2').stop().slideDown();
-    };
+
 });
-$('#header #nav .depth1 > li').on('mouseout', function(){
-    if ( $('html').hasClass('pc') ) {
+$('#header #nav .depth1 > li').on('mouseleave', function(){
+
         $(this).find('.depth2').stop().slideUp();
-    };
+
 });
+
+
+//---------------------------------------------------------------------
+
+
 
 //메인 img 슬라이드(slick) 작업
 $(function(){
@@ -141,7 +142,7 @@ $(window).on('scroll', function(){
     }
 })
 $(window).on('scroll', function(){
-    let prescr = $('.sns').offset().top - $(window).height()/1;
+    let prescr = $('section.global .title p').offset().top - $(window).height()/1;
     let sct = $(this).scrollTop()
 
     if (sct >= prescr) {
