@@ -24,8 +24,7 @@
     }
     #header.on .open { display:none;}
     #header .close { display:block; 
-        position:fixed; top:30px; 
-        
+        position:fixed; top:30px; right:-50px;
         font-size:30px; z-index:9999999;
     }
     #header.on .close {
