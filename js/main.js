@@ -92,7 +92,7 @@ $(function(){
         dots: true,
         autoplay: true,
         fade: true, //fade in  효과 주기위해서 true로
-        autoplaySpeed: 5000,
+        autoplaySpeed: 3000,
         pauseOnHover: false, //마우스오버 되었을 때 멈춤 해제
         pauseOnFocus: false
     });
