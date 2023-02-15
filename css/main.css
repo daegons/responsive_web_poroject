@@ -126,11 +126,11 @@ section.about .inner ul {
 section.about .inner ul li h3{font-size: 18px; margin-bottom: 20px; font-weight: normal; color:#fff;}
 section.about .inner ul li {color: #c5c5c5; float: left; width: 33.3333%; font-size: 17px; font-weight: 100;}
 section.about .inner ul li:nth-child(1) {transform: translateX(-100%); transition: all 1s; opacity: 0;}
-section.about .inner ul li:nth-child(2) {transform: translateX(100%); transition: all 1s; opacity: 0;}
-section.about .inner ul li:nth-child(3) {transform: translateY(100%); transition: all 1s; opacity: 0;}
+section.about .inner ul li:nth-child(2) {transform: translateY(100%); transition: all 1s; opacity: 0;}
+section.about .inner ul li:nth-child(3) {transform: translateX(100%); transition: all 1s; opacity: 0;}
 section.about .inner ul li:nth-child(1).on {transform: translateX(0%); opacity: 1;}
-section.about .inner ul li:nth-child(2).on {transform: translateX(0%); opacity: 1;}
-section.about .inner ul li:nth-child(3).on {transform: translateY(0%); opacity: 1;}
+section.about .inner ul li:nth-child(2).on {transform: translateY(0%); opacity: 1;}
+section.about .inner ul li:nth-child(3).on {transform: translateX(0%); opacity: 1;}
 
 /*section.premium*/
 section.premium {width: 95%;margin: 40px auto; padding: 100px 0; box-sizing: border-box; height: 1020px; background: url(../img/con2_bg.jpg)no-repeat center/cover; position: relative;}
